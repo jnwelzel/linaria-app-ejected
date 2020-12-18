@@ -80,7 +80,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -158,7 +160,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/parser": "^7.12.11",
     "@babel/plugin-syntax-jsx": "^7.12.1",
-    "@linaria/webpack-loader": "^3.0.0-beta.1"
+    "@linaria/webpack-loader": "^3.0.0-beta.1",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11"
   }
 }
