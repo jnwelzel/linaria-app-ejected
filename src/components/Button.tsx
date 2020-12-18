@@ -24,6 +24,10 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
+const red = css`
+  background-color: red;
+`
+
 /**
  * Primary UI component for user interaction
  */
@@ -38,7 +42,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode, red].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
