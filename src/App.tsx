@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import { styled } from '@linaria/react'
+import {Button} from './components/Button'
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           >
           Learn React
         </Link>
+        <Button label="Button"/>
       </AppHeader>
     </Container>
   )
