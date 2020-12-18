@@ -156,7 +156,8 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "@linaria"
     ]
   },
   "devDependencies": {
